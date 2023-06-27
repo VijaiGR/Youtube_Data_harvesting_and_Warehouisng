@@ -1,4 +1,4 @@
-# Youtube_Data_harvesting_and_Warehouisng
+# Youtube_Data_harvesting_and_Warehousing
 
  ## Project Descriptions
 
