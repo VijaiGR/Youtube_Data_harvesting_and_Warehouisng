@@ -304,9 +304,9 @@ with tab1:
 
         # Store data in MongoDB Atlas
         if store_data:  # st.button("Store Data in MongoDB Atlas")
-            collection.replace_one({'_id': channel_id}, final_output_data, upsert=True)
-            #collection.insert_one(channel)
-            #{'_id': channel_id}, final_output_data, upsert=True
+            #collection.replace_one({'_id': channel_id}, final_output_data, upsert=True)
+            collection.insert_one(channel)
+            {'_id': channel_id}, final_output_data, upsert=True
             st.success("Data stored successfully in MongoDB Atlas!")
 
         # Retrieve data from MongoDB Atlas
