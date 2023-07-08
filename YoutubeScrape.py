@@ -39,7 +39,7 @@ with tab1:
         # Access youtube API
         api_service_name = 'youtube'
         api_version = 'v3'
-        api_key = 'AIzaSyDs2dBskX9CGi6n7SBICo8d-sI04CYeNV4'
+        api_key = 'AIzaSyDldORJbO8akDKDJ9XGFvmzoqTCiCbpgTo'
         youtube = build(api_service_name, api_version, developerKey=api_key)
 
         # Retrieve channel data using YouTube API
