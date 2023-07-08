@@ -354,7 +354,7 @@ with tab2:
     document_name = st.selectbox('**Select Channel name**', options=file_names, key='file_names')
     Migrate = st.button('**Migrate to Postgres**')
 
-    # Define Session state to Migrate to MySQL button
+    # Define Session state to Migrate to Postgres  button
     if 'migrate_sql' not in st.session_state:
         st.session_state_migrate_sql = False
     if Migrate or st.session_state_migrate_sql:
@@ -472,7 +472,7 @@ with tab2:
         # Open a session
         session = Session()
 
-        Base = declarative_base()
+        # Base = declarative_base()
 
         # Use pandas to insert the DataFrames data to the SQL Database -> table1
 
